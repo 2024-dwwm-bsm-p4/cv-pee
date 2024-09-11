@@ -57,14 +57,20 @@ table {
 
 **********************/
 
+/*pour stocker les codes couleurs utilisés sur le site*/
+
 :root {
     --grisC: #cacaca;
     --gris7: #8a8a8a;
     --border: #aaa;
     --bleu: #068ec6;
-    --texte: #555;
     --bgNoir: #111;
     --bleufonce: #68beec; 
+    --bleuciel: #8cecfb;
+    --bleuintermediaire: #88ccf1; 
+    --bleutitreh2: #057cbb;
+    --grisdate: #3a3e40; 
+    --bleutresfonce: #094967;
 }
 
 .container {
@@ -113,7 +119,7 @@ body {
 }
 
 header {
-    background: #88ccf1;
+    background: var(--bleuintermediaire);
     height: 150px;
     color: #fff;
 }
@@ -166,13 +172,14 @@ header ul li #nom {
     font-size: 30px;
 }
 
+
 main {
     display: grid;
     grid-template-columns: 2fr 5fr;
 }
 
 aside {
-    background: #e5eaeb;
+    background: var(--bleuciel);
     min-height: calc(100vh - 150px);
     padding:0 10%;
 }
@@ -189,10 +196,11 @@ aside h2, section article h2 {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
+    color: var(--bleutitreh2);
 }
 
 aside p {
-    color: var(--texte);
+    color: var(--grisdate);
     margin-bottom: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid #cecece;
@@ -207,6 +215,7 @@ section article {
 section article h2 {
     width: auto;
     background: #fff;
+    color: var(--bleutitreh2);
     border-right: 1px solid #cecece;
     position: relative;
     top: -10px;
@@ -215,7 +224,7 @@ section article h2 {
 }
 
 section article p {
-    color: var(--texte);
+    color: var(--grisdate);
     line-height: 1.2;
 }
 
@@ -231,12 +240,13 @@ section article li span.periode {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: var(--grisdate);
 }
 
 section article li.exp span.desc {
     padding-left: 20px;
     line-height: 1.4;
-    color: var(--texte);
+    color: var(--grisdate);
 }
 
 section article li.exp span.desc strong {
@@ -244,7 +254,7 @@ section article li.exp span.desc strong {
 }
 
 footer {
-    background: var(--bgNoir);
+    background: var(--bleufonce);
     height: 50px;
 }
 
@@ -254,8 +264,7 @@ footer ul {
 }
 
 footer ul li:first-child {
-    ackground: var(--bleu);
-    background: #444;
+    background: var(--bleu);
     height: 50px;
 }
 
@@ -274,7 +283,7 @@ footer ul li:nth-child(2) {
 }
 
 footer ul li:nth-child(2) a {
-    color: #999;
+    color: var(--bleutresfonce);
     text-decoration: none;
     font-size: 12px;
 }
