@@ -64,6 +64,7 @@ table {
     --bleu: #068ec6;
     --texte: #555;
     --bgNoir: #111;
+    --bleufonce: #68beec; 
 }
 
 .container {
@@ -147,7 +148,7 @@ header ul li:nth-child(3) {
 }
 
 header ul li:first-child {
-    background: #68beec;
+    background: var(--bleufonce);
     color: #fff;
     height: 110px;
     padding: 40px 16% 0 16%;
