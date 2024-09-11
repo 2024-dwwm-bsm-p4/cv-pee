@@ -32,7 +32,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    background: #fff;
+    background: #8cecfb;
+
 }
 ol, ul {
 	list-style: none;
@@ -94,7 +95,9 @@ html {
     background: var(--grisC);
     min-width: 100vw;
     min-height: 100vh;
-    font-family: Arial;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -109,7 +112,7 @@ body {
 }
 
 header {
-    background: var(--bgNoir);
+    background: #88ccf1;
     height: 150px;
     color: #fff;
 }
@@ -123,8 +126,9 @@ header ul li {
     height: 150px;
     padding: 50px 0 0 15%;
     font-size: 15px;
-    color: #aaa;
+    color: #68beec;
     line-height: 1.5;
+    font-weight: 200;
 }
 
 header ul li strong {
@@ -143,7 +147,7 @@ header ul li:nth-child(3) {
 }
 
 header ul li:first-child {
-    background: var(--bleu);
+    background: #68beec;
     color: #fff;
     height: 110px;
     padding: 40px 16% 0 16%;
@@ -296,7 +300,7 @@ footer ul li:nth-child(2) a:hover {
         font-size: 13px;
     }
     header ul li strong {
-        font-size: 14px;
+        font-size: 20px;
     }
     
 }
