@@ -263,7 +263,7 @@ footer ul {
 }
 
 footer ul li:first-child {
-    background: var(--bleu);
+    background: transparent;
     height: 50px;
 }
 
