@@ -44,6 +44,18 @@ h2 {
     color: #0578b1;
 }
 
+h3 {
+
+    color: #3b9652;
+}
+
+h4 {
+
+    color: #488deb;
+    font-style: italic;
+    text-align: center;
+}
+
 .titre_document{
  
 }
@@ -92,7 +104,7 @@ h2 {
 
 /* css pour le séparateur poisson */
 .separator {
-    width: 100%;
+    width: 100vw;
     height: 50px;
     overflow: hidden;
     position: relative;
@@ -102,7 +114,7 @@ h2 {
     position: absolute;
     right: -50px; /* Place le poisson hors de l'écran à gauche */
     font-size: 2em; /* Taille du poisson */
-    animation: swim 10s linear infinite; /* Animation de nage */
+    animation: swim 20s linear infinite; /* Animation de nage */
   }
   
 @keyframes swim {
@@ -114,16 +126,27 @@ h2 {
     }
   }
   
+.curseur_baleine {
+
+    cursor: url('./Images/phoque.jpg'), auto;
+    
+
+}
 
 .centres_interets {
 
 
 }
 
+.langues {
+
+
+}
 
 .presentation {
 
-
+    text-align: center;
+    
 }
 
 .periode {
@@ -148,12 +171,32 @@ h2 {
 
 .competences {
 
-
+    text-align: center;
 }
 
 .bas_de_page {
 
+    margin: 5%;
+    background-color: #99d8f1;
+    padding: 5%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
 
+.logo {
+    width: 100%;
+    padding: %;
+}
+
+.pdf {
+
+    width: 50%;
+}
+
+.linkedin {
+
+    width: 50%;
 }
 
 .responsive_image {
@@ -162,6 +205,8 @@ h2 {
     height: auto; 
     max-width: 30px;
 }
+
+
 
 @media screen (min-width: 600px) {
     
