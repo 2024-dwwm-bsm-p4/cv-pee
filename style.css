@@ -7,6 +7,13 @@ html {
     font-style: normal;
 }
 
+main {
+
+    color: #5e6264;
+
+}
+
+
 body {
 
     max-width: 480px;
@@ -16,7 +23,7 @@ body {
 .fond_marin {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
               url("./Images/fond_marin.jpg");
-    max-width: 480px;
+    width: 100vw; /*pour s'adapter à toute la largeur de la page*/
     
 }
 .positionnement_entete {
@@ -30,6 +37,11 @@ body {
     width: 20%;
     opacity: 1;
 
+}
+
+h2 {
+
+    color: #0578b1;
 }
 
 .titre_document{
@@ -46,26 +58,62 @@ body {
 
     width: 100%;
     padding: 10px;
-
-
 }
+.centre {
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #5e6264;
+    }
+
+#identite {
+
+    font-weight: bold;
+}    
 .gauche {
 
- 
+    color:#0578b1;
+    
 
 }
 
 .droite {
 
-
-
-}
-
-.entete {
+ color: #0578b1;
 
 }
 
+.adresse {
+
+    font-weight: bold;
+    color: #0578b1;
+}
+
+/* css pour le séparateur poisson */
+.separator {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+.fish {
+    position: absolute;
+    right: -50px; /* Place le poisson hors de l'écran à gauche */
+    font-size: 2em; /* Taille du poisson */
+    animation: swim 10s linear infinite; /* Animation de nage */
+  }
+  
+@keyframes swim {
+    0% {
+      right: -50px; /* Début de l'animation (hors de l'écran à gauche) */
+    }
+    100% {
+      right: 100%; /* Fin de l'animation (hors de l'écran à droite) */
+    }
+  }
+  
 
 .centres_interets {
 
@@ -114,6 +162,27 @@ body {
     height: auto; 
     max-width: 30px;
 }
+
+@media screen (min-width: 600px) {
+    
+    body {
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
+        url("./Images/fond_marin.jpg");
+        max-width: 600px;
+    }
+
+}
+
+@media  (min-width: 1024px) {
+    
+    body {
+
+
+    }
+}
+/* Média query/*
+
+
 
 
 /*site en reconstruction/*
