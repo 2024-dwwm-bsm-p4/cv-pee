@@ -146,7 +146,7 @@ h4 {
     margin-right: 15px;
 }
 
-.competences {
+.competences, .techniques, .professionnelles, .personnelles {
     text-align: center;
     font-size: 16px;
     padding-bottom: 10px; 
@@ -178,17 +178,19 @@ h4 {
 }
 
 /* pour tablette*/
-@media screen (min-width: 768px) 
-    
-        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
-        url("./Images/fond_marin.jpg");
-        max-width: 600px;
+@media (min-width: 768px) {
+
+    .competences_globales {
+        background-color: #99d8f1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
 }
 
 /* pour ordinateur*/
-@media screen (min-width: 1024px) {
+@media (min-width: 1024px) {
     
     body {
 
