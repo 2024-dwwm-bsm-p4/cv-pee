@@ -1,7 +1,5 @@
-html {
-    font-family: "Patrick Hand", cursive;
-    font-weight: 400;
-    font-style: normal;
+* {
+    margin:0px;
 }
 
 main {
@@ -9,13 +7,15 @@ main {
 }
 
 body {
-   margin: 0px;
+   
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .fond_marin {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
               url("./Images/fond_marin.jpg");
-    width: 100vw; /*pour s'adapter à toute la largeur de la page*/
 }
 
 .photo_cv {
@@ -42,22 +42,31 @@ h4 {
 .mes_colonnes_fond_marin {
     display: flex;
     flex-direction: row; /*Les colonnes sont alignées côte à côte (horizontalement).*/
+    font-size: 18px;
+    justify-content: space-around;
 }
 
 .colonne {
-    width: 100%;
     padding: 10px;
+    font-size: 17px;
 }
 .centre {
         display: flex;
         flex-direction: column;
         align-items: center;
         color: #5e6264;
+        font-size: 18px;
+        
     }
 
 #identite {
     font-weight: bold;
+    font-size: 17px;
 }    
+.titre_document {
+    font-size: 17px;
+    padding-bottom: 10px;
+}
 .gauche {
     color:#0578b1;
 }
@@ -69,11 +78,11 @@ h4 {
 .adresse {
     font-weight: bold;
     color: #0578b1;
+    font-size: 16px;
 }
 
 /* css pour le séparateur poisson */
 .separator {
-    width: 100vw;
     height: 50px;
     overflow: hidden;
     position: relative;
@@ -96,21 +105,45 @@ h4 {
   }
   
 .presentation {
-    text-align: justify;    
+    text-align: justify;  
+    padding-bottom: 10px; 
+    padding-top: 3px;
+    font-size: 16px;
 }
 
+.principales_experiences {
+    padding-bottom: 8px; 
+    padding-top: 3px;
+    font-size: 16px;
+}
 .formations {
-    width: 100vw;
+    padding-bottom: 5px; 
+    padding-top: 3px;
+    font-size: 16px;
+}
+.langues {
+    padding-bottom: 10px; 
+    padding-top: 3px;
+    font-size: 16px;
+}
+.centres_interets {
+    padding-bottom: 10px; 
+    padding-top: 3px;
+    font-size: 16px;
 }
 
 .competences {
     text-align: center;
+    font-size: 16px;
+    padding-bottom: 10px; 
+    padding-top: 5px;
 }
 
 .bas_de_page {
     background-color: #99d8f1;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .logo {
@@ -118,19 +151,19 @@ h4 {
 }
 
 .pdf {
-    width: 50%;
+    width: 30%;
 }
 
 .linkedin {
-    width: 50%;
+    width: 30%;
 }
 
 .responsive_image {
-    width: 100%; 
     height: auto; 
     max-width: 30px;
 }
 
+/* pour tablette*/
 @media screen (min-width: 768px) {
     
     body {
@@ -141,16 +174,11 @@ h4 {
 
 }
 
-@media  (min-width: 1024px) {
+/* pour ordinateur*/
+@media screen (min-width: 1024px) {
     
     body {
 
 
     }
 }
-/* Média query/*
-
-
-
-
-/
