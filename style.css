@@ -171,6 +171,48 @@ h4 {
     height: auto; 
     max-width: 30px;
 }
+    /*création d'un bouton mode nuit*/
+
+    #button_dark_mode {
+        color: white;
+        background-color: #1078b4;
+        display: block;
+        margin: auto 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .dark_mode {
+        background-color: #3b4246;
+
+        p {
+            color: white;
+    }
+        
+        .principales_experiences {
+            color: white;
+        }
+        .formations {
+            color: white;
+        }
+        h2 {
+            color: #86ccf4;
+        }
+        .langues {
+            color: white;
+        }
+        .centres_interets {
+            color: white;
+        }
+        h3 {
+            color: #86f497;
+        }
+        h4 {
+            color:#86ccf4;
+        }
+    }
+    
+    
 
 /* pour tablette*/
 @media (min-width: 768px) {
