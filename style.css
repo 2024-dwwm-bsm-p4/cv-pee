@@ -187,8 +187,26 @@ h4 {
 
         p {
             color: white;
-    }
-        
+        }
+        #dark_adresse {
+            color: #176fa4;
+        }
+        #identite {
+            color: #3b4246;
+        }
+        .titre_document {
+            color: #3b4246;
+        }
+        .presentation {
+            color: white;
+        }
+        .adresse {
+            color: #176fa4;
+            text-decoration: underline;
+        }
+        .colonne_droite {
+            color: #176fa4;
+        }
         .principales_experiences {
             color: white;
         }
@@ -209,6 +227,9 @@ h4 {
         }
         h4 {
             color:#86ccf4;
+        }
+        .competences_globales {
+            color: white;
         }
     }
     
