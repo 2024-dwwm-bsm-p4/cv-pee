@@ -25,9 +25,13 @@ body {
     opacity: 1;
 }
 
-li {
+li {  
     list-style: "🐳";
     padding-left: 3px;
+    padding-bottom: 7px;
+}
+.exp {
+    padding-bottom: 7px;
 }
 
 h2 {
