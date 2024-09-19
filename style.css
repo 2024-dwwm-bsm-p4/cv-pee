@@ -274,20 +274,26 @@ h4 {
         flex-direction: row;
         justify-content: space-around;
         padding-top: 5px;
-        border: 2px dotted #99d8f1;
+        border: none;
         font-size: 20px;
     }
     .technical {
         width: 20%;
         font-size: 20px;
+        box-shadow: 10px 10px rgba(100, 162, 210, 0.486);
+        border-radius: 10px;        
     }
     .professional {
         width: 20%;
         font-size: 20px;
+        box-shadow: 10px 10px rgba(100, 162, 210, 0.486);
+        border-radius: 10px;
     }
     .personal {
         width: 20%;
         font-size: 20px;
+        box-shadow: 10px 10px rgba(100, 162, 210, 0.486);
+        border-radius: 10px;
     }
     .languages {
         padding-bottom: 10px; 
