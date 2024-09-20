@@ -1,6 +1,6 @@
 * {
     margin:0px;
-}
+    }
 
 main {
     color: #5e6264;
@@ -100,17 +100,17 @@ h4 {
   
 .fish {
     position: absolute;
-    right: -50px; /* Place le poisson hors de l'écran à gauche */
-    font-size: 2em; /* Taille du poisson */
-    animation: swim 20s linear infinite; /* Animation de nage */
+    right: -50px; 
+    font-size: 2em; 
+    animation: swim 20s linear infinite; 
   }
   
 @keyframes swim {
     0% {
-      right: -50px; /* Début de l'animation (hors de l'écran à gauche) */
+      right: -50px; /* Début de l'animation  */
     }
     100% {
-      right: 100%; /* Fin de l'animation (hors de l'écran à droite) */
+      right: 100%; /* Fin de l'animation  */
     }
   }
   
@@ -241,7 +241,19 @@ h4 {
         }
     }
     
-    
+    @keyframes slideIn {
+        0% {
+            transform: translateX(-100%); /* En dehors de l'écran à gauche */
+            opacity: 0; /* Transparent */
+        }
+        100% {
+            transform: translateX(0); /* À sa position d'origine */
+            opacity: 1; /* Complètement visible */
+        }
+    }
+    .presentation, .global-skills {
+        animation: slideIn 5s ease-out forwards; /* 1s pour la durée, ease-out pour une décélération, forwards pour conserver la fin de l'animation */
+    }
 
 /* pour tablette*/
 @media (min-width: 768px) {
