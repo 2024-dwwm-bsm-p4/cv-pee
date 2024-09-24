@@ -25,11 +25,12 @@ body {
     opacity: 1;
 }
 
-li {  
-    list-style: "🐳";
+li {
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><circle cx="3" cy="3" r="3" fill="green" /></svg>');
     padding-left: 3px;
     padding-bottom: 7px;
 }
+
 .exp {
     padding-bottom: 7px;
 }
@@ -164,18 +165,16 @@ h4 {
     justify-content: space-around;
 }
 .logo {
-    padding: 2%;
+    padding: 5px;
 }
 .pdf {
-    width: 30%;
+    width: 50%;
 }
+
 .linkedin {
-    width: 30%;
+    width: 50%;
 }
-.responsive_image {
-    height: auto; 
-    max-width: 30px;
-}
+
 .dark-adress {
     color: #4f5559;
 }
