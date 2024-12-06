@@ -160,19 +160,35 @@ h4 {
 }
 .footer {
     background-color: #99d8f1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
 }
-.logo {
-    padding: 5px;
-}
+
 .pdf {
     width: 50%;
+    place-items: center;
+    
+   
+}
+
+.pdf img {
+    height: 60%;
+    
 }
 
 .linkedin {
     width: 50%;
+    margin-top: 5px;
+    place-items: center;
+    
+    
+}
+
+.linkedin img {
+    height: 60%;
+    
 }
 
 .dark-adress {
